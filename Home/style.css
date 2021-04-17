@@ -1,0 +1,338 @@
+/* VINEET MANKANI - TREKS FOR YOU | Home */
+
+@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Hachi+Maru+Pop&family=Potta+One&family=New+Tegomin&family=Train+One&family=Bangers&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS';
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: rgb(2, 75, 50);
+    mix-blend-mode: overlay;
+}
+
+video { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+div.logo img {
+    position: absolute;
+    margin: 60px 0px 0px 15px;
+    height: 66px;
+    width: auto;
+    z-index: 10;
+}
+
+div.logo img:hover {
+    border: 1px solid white;
+    border-radius: 33px;
+}
+
+div.head {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 20%;
+    z-index: 5;
+}
+
+div.head h1 {
+    font-size: 110px;
+    font-family: 'East Sea Dokdo';
+    font-weight: 600;
+    top:50%;
+}
+
+div.head h3 {
+    font-size: 24px;
+    padding-top: 10px;
+    font-family: 'Potta One';
+    font-weight: 100;
+}
+
+/* ********************************* */
+
+div.trek {
+    position: relative;
+    height: 28vw;
+    top: 100vh;
+    border: 3px solid black;
+    margin: 20px 50px 10px 20px;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+div.trek p.trekname{
+    padding: 1vw;
+    margin: 0;
+    font-size: 2vw;
+    font-weight: 100;
+    font-family: 'Bangers';
+    letter-spacing: 1.4px;
+    text-decoration: underline;
+}
+
+img.trekimg{
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    border: 3px solid black;
+    margin: 0px 20px 15px 20px;
+    float: left;
+
+}
+
+div.info{
+    position: relative;
+    width: fit-content;
+    font-size: 1.4vw;
+    font-family: 'New Tegomin';
+    font-weight: bold;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+/* ********************************* */
+
+@media screen and (max-width: 400px) {
+
+    div.head h1 {   
+        font-size: 90px;
+        line-height: 60px;
+    }
+    div.head h3 {   
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+
+    div.head h1 {
+        font-size: 100px;
+        line-height: 80px;
+    }
+    div.head h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 700px) {
+
+    div.head h1 {
+        font-size: 100px;
+        line-height: 80px;
+    }
+    div.head h3 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+
+    div.head h1 {
+        font-size: 120px;
+    }
+    div.head h2 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-height: 1200px) {
+    
+    div.head h1 {
+        font-size: 180px;
+    }
+    div.head h3 {
+        font-size: 28px;
+    }
+}
+
+#nav {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 5;
+    background-image: url("../Media/BlueSky.jpg");
+    background-repeat:no-repeat;
+    background-position-y: 30%;
+    background-size: 100% 600%;
+    opacity: 0.9;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding: 1vw 1vw 1.4vw 1vw;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#nav span a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    font-family: 'New Tegomin';
+    font-weight: bold;
+    padding: 5px 15px 10px 15px ;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+#nav span a:hover {
+    background-color:rgba(0, 255, 255, 0.8);
+    border: 1px solid black;
+    text-decoration: underline;
+}
+
+@media screen and (min-width:600px) and (max-width:700px) {
+    #nav span a {
+        padding: 5px 9px 5px 9px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:450px) and (max-width:600px) {
+    #nav span a {
+        padding: 3px 6px 3px 6px;
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width:450px) {
+    #nav span a {
+        padding: 2px 4px 2px 4px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-height: 1200px) {
+    #nav span a  {
+        padding: 10px 18px 10px 18px ;
+        font-size: 40px;
+    }
+}
+
+div.foot {
+    position: relative;
+    height: auto;
+    top: 100vh;
+    background-color:rgba(20, 225, 20, 0.8);
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 10px;
+}
+
+div.links {
+    position: relative;
+    width: auto;
+    z-index: 5;
+    top: 0px;
+}
+
+div.links a {
+    display: inline-block;
+    padding-right: 4px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+div.links a:hover {
+    transform: translateY(-10px);
+}
+
+div.links a img {
+    width: 20px;
+}
+
+div.copyright {
+    position: relative;
+    bottom: 0px;
+    font-weight: 500;
+    z-index: 5;
+}
+
+div.copyright a {
+    text-decoration: none;
+    color: black;
+}
+
+div.copyright a:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    footer div#foot {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-height: 1200px) {
+    footer div#foot  {
+        font-size: 30px;
+    }
+    footer div#foot div.links a img {
+        height: 35px;
+        width: auto;
+    }
+}
+
+/* Reference for Scroll Down Arrow Code --> https://codepen.io/postor/pen/mskxI */
+/* This Section (.arrows) of the Code has been Referred from the Source mentioned above and is Modified by Me */
+
+.arrows {
+    width: 70px;
+    height: 80px;   
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 2vh;
+}
+  
+.arrows path {
+    stroke: yellow;
+    fill: transparent;
+    stroke-width: 5px;	
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite; 
+}
+  
+@keyframes arrow {
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+}
+  
+@-webkit-keyframes arrow {
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+}
+  
+.arrows path.a1 {
+    animation-delay: -1s;
+    -webkit-animation-delay: -1s; 
+}
+  
+.arrows path.a2 {
+    animation-delay: -0.5s;
+    -webkit-animation-delay: -0.5s; 
+}
+  
+.arrows path.a3 {	
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s; 
+}
+
+/* End of Scroll Down Arrow Code */
+
+/* End of CSS Code */
